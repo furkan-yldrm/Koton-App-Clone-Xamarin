@@ -16,5 +16,14 @@ namespace KotonAppXamarin.Views
         {
             InitializeComponent();
         }
+        private async void GotoFav(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Favorites());
+        }
+
+        private async void goHome(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
     }
 }
