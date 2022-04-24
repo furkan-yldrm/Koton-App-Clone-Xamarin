@@ -2,11 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KotonAppXamarin.Views.Categories2">
+    <Shell.TitleView>
+        <StackLayout>
+            <Image Source="koton_logo.png" HeightRequest="70" WidthRequest="100" Margin="0,0,60,0" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="shoes.png"  WidthRequest="350" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand"></Image>
+            <Image Source="modern.png"  WidthRequest="350" HorizontalOptions="CenterAndExpand"></Image>
+            <Image Source="wtshirt.png"  WidthRequest="350" HorizontalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
