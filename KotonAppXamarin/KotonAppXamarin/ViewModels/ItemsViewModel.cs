@@ -69,7 +69,7 @@ namespace KotonAppXamarin.ViewModels
 
         private async void OnAddItem(object obj)
         {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
+            await Shell.Current.GoToAsync(nameof(HomePage));
         }
 
         async void OnItemSelected(Item item)
@@ -78,7 +78,7 @@ namespace KotonAppXamarin.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(HomePage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
     }
 }

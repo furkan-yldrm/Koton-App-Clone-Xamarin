@@ -16,5 +16,14 @@ namespace KotonAppXamarin.Views
         {
             InitializeComponent();
         }
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Categories2());
+        }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Categories3());
+        }
     }
 }
