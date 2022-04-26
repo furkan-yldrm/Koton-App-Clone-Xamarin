@@ -2,12 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KotonAppXamarin.Views.HomePage"
+             Title="ANASAYFA"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Shell.TitleView>
-        <StackLayout>
-            <Image Source="koton_logo.png" HeightRequest="70" WidthRequest="100" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
-        </StackLayout>
-    </Shell.TitleView>
 
 
     <ContentPage.Resources>
