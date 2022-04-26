@@ -4,9 +4,35 @@
              x:Class="KotonAppXamarin.Views.ItemDetails">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout BindableLayout.ItemsSource="{Binding Collection}" Orientation="Horizontal" Spacing="10" VerticalOptions="StartAndExpand">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout VerticalOptions="Start">
+                                    <Image Source="{Binding Image}" Aspect="Fill" Margin="5"  />
+                                    <Label Text="{Binding Aciklama}" TextColor="Black" FontSize="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                                    <Grid Grid.Row="3" HorizontalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Text="-" FontSize="30" TextColor="Black" BackgroundColor="LightGray" Grid.Column="0" HorizontalOptions="End"/>
+                                        <Entry Placeholder="0" Grid.Column="1" BackgroundColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="30" TextColor="Black"/>
+                                        <Button Text="+" FontSize="30" TextColor="Black" BackgroundColor="LightGray" Grid.Column="2" HorizontalOptions="Start"/>
+                                        <Label Text="Beden seçiniz" FontSize="20" Grid.Row="1" Margin="0,20,0,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+                                        <RadioButton Content="S" Grid.Column="0" Grid.Row="2" Margin="10"/>
+                                        <RadioButton Content="M" Grid.Column="1" Grid.Row="2" Margin="10"/>
+                                        <RadioButton Content="L"  Grid.Column="2" Grid.Row="2" Margin="10"/>
+                                    </Grid>
+                                    <Button Text="SEPETE EKLE" BackgroundColor="Black" TextColor="White" Margin="10,10,10,10" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
