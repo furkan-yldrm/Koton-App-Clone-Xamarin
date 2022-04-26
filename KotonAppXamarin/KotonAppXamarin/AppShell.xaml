@@ -29,7 +29,7 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
+   <!-- <TabBar>
         <ShellContent Title="Anasayfa" Icon="home.png"  ContentTemplate="{DataTemplate local:HomePage}" />
         <ShellContent Title="Kategoriler" Icon="search.png" ContentTemplate="{DataTemplate local:Categories}" />
         <ShellContent Title="Sepetim" Icon="bag.png" ContentTemplate="{DataTemplate local:Bag}" />
@@ -37,14 +37,30 @@
         <ShellContent Title="Hesabım" Icon="avatar.png" ContentTemplate="{DataTemplate local:Account}" />
     </TabBar>
 
-    <!--
-        If you would like to navigate to this content you can do so by calling
-        await Shell.Current.GoToAsync("//LoginPage");
-    -->
+
     <TabBar>
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:HomePage}" />
-    </TabBar>
+    </TabBar> -->
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Anasayfa" Icon="home.png">
+            <local:HomePage/>
+        </ShellContent>
+        <ShellContent Title="Kategoriler" Icon="search.png">
+            <local:Categories/>
+        </ShellContent>
+        <ShellContent Title="Sepetim" Icon="bag.png">
+            <local:Bag/>
+        </ShellContent>
+        <ShellContent Title="Favoriler" Icon="heart.png">
+            <local:Favorites/>
+        </ShellContent>
+        <ShellContent Title="Login" Icon="avatar.png">
+            <local:Account/>
+        </ShellContent>
+    </FlyoutItem>
 
 
 </Shell>
 
+<!-- <Tab Title="Kategoriler" Icon="search.png" >
+        </Tab> -->
