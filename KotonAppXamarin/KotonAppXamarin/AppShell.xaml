@@ -54,7 +54,7 @@
         <ShellContent Title="Favoriler" Icon="heart.png">
             <local:Favorites/>
         </ShellContent>
-        <ShellContent Title="Login" Icon="avatar.png">
+        <ShellContent Title="Hesabım" Icon="avatar.png">
             <local:Account/>
         </ShellContent>
     </FlyoutItem>
