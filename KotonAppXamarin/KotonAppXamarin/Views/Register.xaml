@@ -15,6 +15,7 @@
             <RadioButton Content="KADIN" />
             <RadioButton Content="ERKEK" />
             <Button Text="ÜYE OL" Margin="10,10,10,10" BackgroundColor="Black" FontSize="Large"></Button>
+            <!-- Deneme commit-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
